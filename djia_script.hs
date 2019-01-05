@@ -20,12 +20,10 @@ lowRatio :: Float
 lowRatio = low / today
 
 isRelativelyHigh :: Float -> Float -> Bool
--- isRelativelyHigh now future = (future / now) > highRatio
-isRelativelyHigh x y = y > 10 + x
+isRelativelyHigh now future = (future / now) > highRatio
 
 isRelativelyLow :: Float -> Float -> Bool
--- isRelativelyLow now future = (future / now) < lowRatio
-isRelativelyLow x y = y < x - 10
+isRelativelyLow now future = (future / now) < lowRatio
 
 higherBeforeLower :: Float -> [Float] -> Bool
 higherBeforeLower x list = ((daysUntil (isRelativelyHigh x) list)
