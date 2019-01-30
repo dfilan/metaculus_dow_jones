@@ -5,10 +5,10 @@ import Text.CSV
 import Data.Char
 
 today :: Float
-today = 23433.16
+today = 24746.00
 
 high :: Float
-high = 25000.0
+high = 30000.0
 
 highRatio :: Float
 highRatio = high / today
